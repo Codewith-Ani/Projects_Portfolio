@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-image: url(bg_image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.container {
+	backdrop-filter: blur(5px);
+	border: 2px solid white;
+	border-radius: 10px;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	padding-top: 3rem;
+
+	box-shadow: 4px 4px 2px gray;
+	border: 1px solid gray;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	background: rgba(0, 0, 2, 0.56);
+	backdrop-filter: brightness(50%);
+}
+
+.container section {
+	width: 100%;
+	margin: 1rem auto;
+}
+
+.container section h2 {
+	color: white;
+	font-size: 3.25rem;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.header {
+	text-align: center;
+}
+
+#section_email_password {
+	display: flex;
+	background-color: #fff;
+	flex-direction: column;
+	background-color: transparent;
+	align-items: center;
+}
+
+.span_email_password {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 2px solid white;
+	margin: 1rem 0;
+}
+
+#section_email_password input {
+	background-color: transparent;
+	width: 100%;
+	padding: 10px auto;
+	font-size: 2rem;
+	margin-top: 1rem auto;
+	color: white;
+	border: none;
+}
+
+.container input:focus-within {
+	border-bottom: 2px solid white;
+	outline: none;
+}
+
+.container input::placeholder {
+	color: white;
+	font-weight: 500;
+}
+
+.section_rememberMe {
+	margin: 0;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section_rememberMe p {
+	font-size: 1.5rem;
+}
+
+.section_rememberMe span {
+	margin-right: 10px;
+}
+
+.section_login_button {
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	background-color: whitesmoke;
+	opacity: 80%;
+	padding: 10px 5rem;
+	border-radius: 2rem;
+	border-color: none;
+	outline: none;
+	font-size: 2rem;
+	font-weight: 500;
+	transition: cubic-bezier(1, 0, 0, 1) 2s ease;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: rgba(63, 52, 52, 0.5);
+	opacity: 60%;
+	border-color: whitesmoke;
+	box-shadow: 4px 4px 2px rgb(104, 90, 90);
+	color: white;
+}
+
+.div_forgotPassword {
+	flex-direction: column;
+	width: 100%;
+}
+
+.div_forgotPassword section {
+	display: flex;
+	margin: 10px auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.div_forgotPassword section a {
+	text-decoration: none;
+	margin-top: 10px;
+	color: white;
+	border-bottom: 2px solid white;
+	transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s ease-in-out;
+}
+
+.div_forgotPassword section a:hover {
+	color: red;
+}
+
+.div_forgotPassword section span {
+	color: whitesmoke;
+	margin-top: 10px;
+}
+
+.div_forgotPassword section a span {
+	color: red;
+	transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s ease-in-out;
+}
+
+.div_forgotPassword section a span:hover {
+	color: white;
+	border-bottom: 2px solid red;
+}
+
+#section_Register {
+	margin-right: 5px;
+}
+
+.material-symbols-outlined {
+	color: white;
+}
+
+@media screen and (max-width: 1500px) {
+	.container {
+		width: 80vw;
+	}
+	#section_email_password {
+		width: 80%;
+	}
+
+	button {
+		padding: 5px 5em;
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		width: 90%;
+	}
+	.container section h2 {
+		font-size: 2.25rem;
+		font-weight: 600;
+		letter-spacing: 1px;
+	}
+	#section_email_password {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.container {
+		width: 95%;
+	}
+}
+@media screen and (max-width: 280px) {
+	.container {
+		width: 100%;
+	}
+	#section_Register {
+		visibility: hidden;
+		display: none;
+	}
+	utton {
+		padding: 5px 5rem;
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+}
